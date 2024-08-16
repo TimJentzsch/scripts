@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Prompt for sudo login
+sudo -v
+# Show commands which are being executed
+set -x
+
+sudo apt update
+sudo apt upgrade -y
+
+flatpak update -y
+
+rustup update
+
+nvm install --lts
